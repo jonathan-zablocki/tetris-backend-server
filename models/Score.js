@@ -5,4 +5,4 @@ const PostSchema = mongoose.Schema({
 	date: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("Posts", PostSchema);
+module.exports = mongoose.model("Score", PostSchema);

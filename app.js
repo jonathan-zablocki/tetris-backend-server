@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Import Routes
 const scoreRoute = require("./routes/score");
-app.use("/score", scoreRoute);
+app.use("/scores", scoreRoute);
 
 //Routes
 app.get("/", (req, res) => {

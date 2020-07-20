@@ -15,8 +15,7 @@ router.get("/", async (req, res) => {
 //Submits a score
 router.post("/", async (req, res) => {
 	const score = new Score({
-		title: req.body.title,
-		description: req.body.description,
+		score: req.body.score,
 	});
 
 	try {
