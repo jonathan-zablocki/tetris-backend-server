@@ -36,4 +36,4 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // How to listen to server
-app.listen(PORT, console.log("Server starting at ${PORT}"));
+app.listen(PORT, console.log("Server starting at " + PORT));
