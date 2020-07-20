@@ -10,8 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Import Routes
-const postsRoute = require("./routes/posts");
-app.use("/posts", postsRoute);
+const scoreRoute = require("./routes/score");
+app.use("/score", scoreRoute);
 
 //Routes
 app.get("/", (req, res) => {
