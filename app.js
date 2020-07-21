@@ -2,15 +2,14 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 require("dotenv/config");
+const cors = require("cors");
 
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(function (req, res, next) {
-	res.setHeader("Access-Control-Allow-Origin", "*");
-});
 
 // Import Routes
 const scoreRoute = require("./routes/score");
